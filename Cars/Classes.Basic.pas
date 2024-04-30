@@ -1,4 +1,4 @@
-unit Classes.Basic;
+п»їunit Classes.Basic;
 
 interface
 
@@ -14,7 +14,7 @@ type
     class function ConstructCar(const AModel: string): TCar;
   end;
 
-  //ToDo: доопределить тип контейнера для хранения нескольких экземпляров TCar
+  //ToDo: РґРѕРѕРїСЂРµРґРµР»РёС‚СЊ С‚РёРї РєРѕРЅС‚РµР№РЅРµСЂР° РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РЅРµСЃРєРѕР»СЊРєРёС… СЌРєР·РµРјРїР»СЏСЂРѕРІ TCar
   TCarBatch = class
 
   end;

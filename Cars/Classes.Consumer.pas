@@ -1,4 +1,4 @@
-unit Classes.Consumer;
+п»їunit Classes.Consumer;
 
 interface
 
@@ -8,9 +8,9 @@ uses
 type
   TCarDealer = class
   private
-    FCarStorage: TCarBatch; // ToDo: уточнить (или переопределить) тип хранилища
+    FCarStorage: TCarBatch; // ToDo: СѓС‚РѕС‡РЅРёС‚СЊ (РёР»Рё РїРµСЂРµРѕРїСЂРµРґРµР»РёС‚СЊ) С‚РёРї С…СЂР°РЅРёР»РёС‰Р°
   public
-    //ToDo: реализовать методы
+    //ToDo: СЂРµР°Р»РёР·РѕРІР°С‚СЊ РјРµС‚РѕРґС‹
     procedure ReceiveCars(ACarBatch: TCarBatch);
     function SaleCar(const AModel: string): TCar;
   end;
