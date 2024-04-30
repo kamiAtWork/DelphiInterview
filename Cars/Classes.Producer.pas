@@ -8,7 +8,7 @@ uses
 type
   TCarFactory = class
   public
-    //ToDo: реализовать метод создания нескольких экземпляров TCar, помещаемых в
+    // ToDo: 2 реализовать метод создания нескольких экземпляров TCar, помещаемых в
     // контейнер. Можно менять сигнатуру метода.
     function ConstructCarBatch(ACount: Integer): TCarBatch;
   end;

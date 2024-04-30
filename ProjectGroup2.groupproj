@@ -9,6 +9,9 @@
 			<Projects Include="Cars\Project2Cars.dproj">
 				<Dependencies/>
 			</Projects>
+			<Projects Include="DB\ProjectDB.dproj">
+				<Dependencies/>
+			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
 		<Target Name="Project2Cars:Make">
 			<MSBuild Targets="Make" Projects="Cars\Project2Cars.dproj"/>
 		</Target>
+		<Target Name="ProjectDB">
+			<MSBuild Projects="DB\ProjectDB.dproj"/>
+		</Target>
+		<Target Name="ProjectDB:Clean">
+			<MSBuild Targets="Clean" Projects="DB\ProjectDB.dproj"/>
+		</Target>
+		<Target Name="ProjectDB:Make">
+			<MSBuild Targets="Make" Projects="DB\ProjectDB.dproj"/>
+		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="Project1Classes;Project2Cars"/>
+			<CallTarget Targets="Project1Classes;Project2Cars;ProjectDB"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="Project1Classes:Clean;Project2Cars:Clean"/>
+			<CallTarget Targets="Project1Classes:Clean;Project2Cars:Clean;ProjectDB:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="Project1Classes:Make;Project2Cars:Make"/>
+			<CallTarget Targets="Project1Classes:Make;Project2Cars:Make;ProjectDB:Make"/>
 		</Target>
 		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
 	</Project>

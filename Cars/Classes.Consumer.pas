@@ -8,9 +8,9 @@ uses
 type
   TCarDealer = class
   private
-    FCarStorage: TCarBatch; // ToDo: уточнить (или переопределить) тип хранилища
+    FCarStorage: TCarBatch; // ToDo: 3 уточнить (или переопределить) тип хранилища
   public
-    //ToDo: реализовать методы
+    //ToDo: 4 реализовать методы
     procedure ReceiveCars(ACarBatch: TCarBatch);
     function SaleCar(const AModel: string): TCar;
   end;

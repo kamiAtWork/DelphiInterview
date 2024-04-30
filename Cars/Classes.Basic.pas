@@ -14,7 +14,7 @@ type
     class function ConstructCar(const AModel: string): TCar;
   end;
 
-  //ToDo: доопределить тип контейнера для хранения нескольких экземпляров TCar
+  //ToDo: 1 до[пере]определить тип контейнера для хранения нескольких экземпляров TCar
   TCarBatch = class
 
   end;
