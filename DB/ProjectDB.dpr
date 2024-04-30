@@ -2,13 +2,13 @@ program ProjectDB;
 
 uses
   Vcl.Forms,
-  ufmDBSample in 'ufmDBSample.pas' {Form55};
+  ufmDBSample in 'ufmDBSample.pas' {fmDB};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm55, Form55);
+  Application.CreateForm(TfmDB, fmDB);
   Application.Run;
 end.

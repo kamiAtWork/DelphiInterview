@@ -1,7 +1,7 @@
-object Form55: TForm55
+object fmDB: TfmDB
   Left = 0
   Top = 0
-  Caption = 'Form55'
+  Caption = 'fmDB'
   ClientHeight = 411
   ClientWidth = 852
   Color = clBtnFace

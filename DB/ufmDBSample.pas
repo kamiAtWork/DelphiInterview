@@ -17,7 +17,7 @@ uses
   Vcl.StdCtrls;
 
 type
-  TForm55 = class(TForm)
+  TfmDB = class(TForm)
     edLogin: TEdit;
     edPass: TEdit;
     btnLogin: TButton;
@@ -31,13 +31,13 @@ type
   end;
 
 var
-  Form55: TForm55;
+  fmDB: TfmDB;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm55.btnLoginClick(Sender: TObject);
+procedure TfmDB.btnLoginClick(Sender: TObject);
 begin
   // ToDo: 1. Всё ли нормально с запросом, возможно - что-то стоит изменить/дополнить.
   qry1.SQL.Text := Format('SELECT * FROM users WHERE user_login = %s AND user_pass = %s', [edLogin.Text, edPass.Text]);

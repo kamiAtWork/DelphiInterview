@@ -12,6 +12,9 @@
 			<Projects Include="DB\ProjectDB.dproj">
 				<Dependencies/>
 			</Projects>
+			<Projects Include="VCL\ProjectVCLSample.dproj">
+				<Dependencies/>
+			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -47,14 +50,23 @@
 		<Target Name="ProjectDB:Make">
 			<MSBuild Targets="Make" Projects="DB\ProjectDB.dproj"/>
 		</Target>
+		<Target Name="ProjectVCLSample">
+			<MSBuild Projects="VCL\ProjectVCLSample.dproj"/>
+		</Target>
+		<Target Name="ProjectVCLSample:Clean">
+			<MSBuild Targets="Clean" Projects="VCL\ProjectVCLSample.dproj"/>
+		</Target>
+		<Target Name="ProjectVCLSample:Make">
+			<MSBuild Targets="Make" Projects="VCL\ProjectVCLSample.dproj"/>
+		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="Project1Classes;Project2Cars;ProjectDB"/>
+			<CallTarget Targets="Project1Classes;Project2Cars;ProjectDB;ProjectVCLSample"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="Project1Classes:Clean;Project2Cars:Clean;ProjectDB:Clean"/>
+			<CallTarget Targets="Project1Classes:Clean;Project2Cars:Clean;ProjectDB:Clean;ProjectVCLSample:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="Project1Classes:Make;Project2Cars:Make;ProjectDB:Make"/>
+			<CallTarget Targets="Project1Classes:Make;Project2Cars:Make;ProjectDB:Make;ProjectVCLSample:Make"/>
 		</Target>
 		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
 	</Project>
