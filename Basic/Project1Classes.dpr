@@ -33,8 +33,8 @@ begin
   begin
     foo := TFoo.Create;
     j := Random(ACount * 2);
-    foo.Prop1 := IntToStr(i);
-    foo.Prop2 := IntToStr(i * 2);
+    foo.FProp1 := IntToStr(i);
+    foo.FProp2 := IntToStr(j);
     Result[i] := foo;
   end;
 end;

@@ -49,11 +49,10 @@ var
   ThreadCount: Integer;
   ThreadList: TList<TCarTransporter>;
   i: Integer;
-  MyElem: TObject;
 begin
   ThreadCount := seThreadCount.Value;
 
-  ThreadList := TList<TThread>.Create;
+  ThreadList := TList<TCarTransporter>.Create;
   try
     for i := 0 to ThreadCount - 1 do
       ThreadList.Add(TCarTransporter.Create(FCarFactory, FCarDealer, i + 1));
