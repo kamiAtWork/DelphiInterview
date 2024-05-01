@@ -1,4 +1,4 @@
-program ProjectDB;
+program Project3DB;
 
 uses
   Vcl.Forms,

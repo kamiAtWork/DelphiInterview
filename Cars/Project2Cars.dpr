@@ -1,11 +1,6 @@
 program Project2Cars;
 
 uses
-  madExcept,
-  madLinkDisAsm,
-  madListHardware,
-  madListProcesses,
-  madListModules,
   Vcl.Forms,
   ufmCarsManipulation in 'ufmCarsManipulation.pas' {fmCarsManipulation},
   Classes.Producer in 'Classes.Producer.pas',

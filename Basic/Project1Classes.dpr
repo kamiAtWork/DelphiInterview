@@ -4,11 +4,6 @@
 {$R *.res}
 
 uses
-  madExcept,
-  madLinkDisAsm,
-  madListHardware,
-  madListProcesses,
-  madListModules,
   System.SysUtils,
   System.Generics.Collections;
 

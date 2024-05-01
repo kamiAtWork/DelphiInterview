@@ -4,7 +4,7 @@
         <AppType>Application</AppType>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <FrameworkType>VCL</FrameworkType>
-        <MainSource>ProjectDB.dpr</MainSource>
+        <MainSource>Project3DB.dpr</MainSource>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <ProjectGuid>{6A7A7BB6-5436-4AA3-BCE4-33E531F3C45C}</ProjectGuid>
         <ProjectVersion>13.4</ProjectVersion>
@@ -143,7 +143,7 @@
                     <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\9.0\Bpl\JvRuntimeDesignDesign160.bpl">JVCL Runtime Design Components</Excluded_Packages>
                 </Excluded_Packages>
                 <Source>
-                    <Source Name="MainSource">ProjectDB.dpr</Source>
+                    <Source Name="MainSource">Project3DB.dpr</Source>
                 </Source>
             </Delphi.Personality>
             <Deployment/>
